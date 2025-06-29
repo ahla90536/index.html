@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Book Reviews</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 30px; background: #f4f7fc; color: #333; }
+    h1 { text-align: center; color: #6a1b9a; font-size: 2.5em; margin-bottom: 30px; }
+    .book { background: #fff; padding: 20px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-left: 8px solid #6a1b9a; }
+    .book img { float: left; margin-right: 15px; width: 150px; border-radius: 8px; }
+    .book h2 { margin-top: 0; color: #5d3e8f; font-size: 1.8em; }
+    .clear { clear: both; }
+    .reader-opinion { padding: 10px; background: #fce4ec; border-left: 5px solid #8e24aa; font-style: italic; color: #555; }
+    .rating input { margin-right: 10px; cursor: pointer; }
+    .comment-box { margin-top: 20px; padding: 12px; background: #fafafa; border-radius: 8px; border: 1px solid #ddd; }
+    .comment-box textarea { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 1.1em; }
+    .comment-box button { padding: 10px 15px; background: #8e24aa; color: #fff; border: none; border-radius: 8px; cursor: pointer; }
+    .comment-box button:hover { background: #6a1b9a; }
+    .comments-list { margin-top: 15px; }
+    .comment-item { background: #f3e5f5; padding: 10px; border-left: 5px solid #8e24aa; border-radius: 8px; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+
+  <h1>Interactive Book Reviews</h1>
+
+  <!-- Book 1: Verity -->
+  <div class="book">
+    <img src="verity_cover.jpg" alt="Verity">
+    <h2>Verity</h2>
+    <p><strong>Author:</strong> Colleen Hoover</p>
+    <p><strong>Review:</strong> A psychological thriller full of suspense and twists.</p>
+    <div class="reader-opinion">A mind-bending plot that will keep you hooked!</div>
+    <div class="rating"><strong>Your Rating:</strong><br>
+      <label><input type="radio" name="ver_rating" value="5"> 5</label>
+      <label><input type="radio" name="ver_rating" value="4"> 4</label>
+      <label><input type="radio" name="ver_rating" value="3"> 3</label>
+      <label><input type="radio" name="ver_rating" value="2"> 2</label>
+      <label><input type="radio" name="ver_rating" value="1"> 1</label>
+    </div>
+    <div class="comment-box">
+      <h3>Share Your Thoughts:</h3>
+      <textarea placeholder="Write a comment..." rows="4"></textarea>
+      <button>Submit</button>
+    </div>
+    <div class="comments-list">
+      <div class="comment-item">This book was a thrilling read!</div>
+      <div class="comment-item">Twists and turns at every corner.</div>
+    </div>
+  </div>
+
+  <!-- Book 2: A Good Girl's Guide to Murder -->
+  <div class="book">
+    <img src="gd_cover.jpg" alt="A Good Girl's Guide to Murder">
+    <h2>A Good Girl's Guide to Murder</h2>
+    <p><strong>Author:</strong> Holly Jackson</p>
+    <p><strong>Review:</strong> A YA mystery full of twists and a smart protagonist.</p>
+    <div class="reader-opinion">A must-read for mystery lovers!</div>
+    <div class="rating"><strong>Your Rating:</strong><br>
+      <label><input type="radio" name="goodgirl_rating" value="5"> 5</label>
+      <label><input type="radio" name="goodgirl_rating" value="4"> 4</label>
+      <label><input type="radio" name="goodgirl_rating" value="3"> 3</label>
+      <label><input type="radio" name="goodgirl_rating" value="2"> 2</label>
+      <label><input type="radio" name="goodgirl_rating" value="1"> 1</label>
+    </div>
+    <div class="comment-box">
+      <h3>Share Your Thoughts:</h3>
+      <textarea placeholder="Write a comment..." rows="4"></textarea>
+      <button>Submit</button>
+    </div>
+    <div class="comments-list">
+      <div class="comment-item">Couldn't put this book down!</div>
+      <div class="comment-item">Pip is an awesome character.</div>
+    </div>
+  </div>
+
+  <!-- Book 3: Ikigai -->
+  <div class="book">
+    <img src="ikigai_cover.jpg"alt="Ikigai">
+    <h2>Ikigai</h2>
+    <p><strong>Authors:</strong> Héctor García & Francesc Miralles</p>
+    <p><strong>Review:</strong> A life-changing guide to finding joy and purpose.</p>
+    <div class="reader-opinion">A must-read for personal growth and well-being.</div>
+    <div class="rating"><strong>Your Rating:</strong><br>
+      <label><input type="radio" name="ikigai_rating" value="5"> 5</label>
+      <label><input type="radio" name="ikigai_rating" value="4"> 4</label>
+      <label><input type="radio" name="ikigai_rating" value="3"> 3</label>
+      <label><input type="radio" name="ikigai_rating" value="2"> 2</label>
+      <label><input type="radio" name="ikigai_rating" value="1"> 1</label>
+    </div>
+    <div class="comment-box">
+      <h3>Share Your Thoughts:</h3>
+      <textarea placeholder="Write a comment..." rows="4"></textarea>
+      <button>Submit</button>
+    </div>
+    <div class="comments-list">
+      <div class="comment-item">Inspiring and insightful!</div>
+      <div class="comment-item">A beautiful guide to a purposeful life.</div>
+    </div>
+  </div>
+
+  <!-- Book 4: The Silent Patient -->
+  <div class="book">
+    <img src="silent_cover.jpg"alt="The Silent Patient">
+    <h2>The Silent Patient</h2>
+    <p><strong>Author:</strong> Alex Michaelides</p>
+    <p><strong>Review:</strong> A psychological thriller about a woman who shoots her husband and then stops speaking.</p>
+    <div class="reader-opinion">A haunting mystery with a twist you won't see coming!</div>
+    <div class="rating"><strong>Your Rating:</strong><br>
+      <label><input type="radio" name="silent_rating" value="5"> 5</label>
+      <label><input type="radio" name="silent_rating" value="4"> 4</label>
+      <label><input type="radio" name="silent_rating" value="3"> 3</label>
+      <label><input type="radio" name="silent_rating" value="2"> 2</label>
+      <label><input type="radio" name="silent_rating" value="1"> 1</label>
+    </div>
+    <div class="comment-box">
+      <h3>Share Your Thoughts:</h3>
+      <textarea placeholder="Write a comment..." rows="4"></textarea>
+      <button>Submit</button>
+    </div>
+    <div class="comments-list">
+      <div class="comment-item">Mind-blowing twist at the end!</div>
+      <div class
